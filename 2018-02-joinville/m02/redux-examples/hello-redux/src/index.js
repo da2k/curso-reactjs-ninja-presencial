@@ -3,17 +3,11 @@ import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App from './app'
+import counter from './reducers/counter'
 import registerServiceWorker from './registerServiceWorker'
 
-const counter = (state = 0, action) => {
-  switch (action.type) {
-    case 'INCREMENT': return state + 1
-    case 'DECREMENT': return state - 1
-  }
-  return state
-}
-
-const store = createStore(counter)
+const initialState = 10
+const store = createStore(counter, initialState)
 
 ReactDOM.render(
   <Provider store={store}>

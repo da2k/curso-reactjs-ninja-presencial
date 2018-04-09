@@ -1,5 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { increment, decrement } from './reducers/counter'
 
 export const App = ({ counter, increment, decrement }) => (
   <div>
@@ -15,17 +17,10 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    increment: () => {
-      dispatch({ type: 'INCREMENT' })
-    },
-
-    decrement: () => {
-      dispatch({ type: 'DECREMENT' })
-    }
-  }
-}
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  increment,
+  decrement
+}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
 
