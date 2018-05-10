@@ -8,6 +8,10 @@ https://reactjs.org/docs/react-component.htmlhttps://reactjs.org/docs/react-comp
 
 https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html
 
+## Gráfico mostrando todas as fases do lifecycle:
+
+http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
 ## Blog do React
 
 https://reactjs.org/blog
