@@ -1,4 +1,4 @@
-# Módulo Redux e React Router
+# Módulo #02: Redux e React Router
 
 ## Documentação Redux:
 k
